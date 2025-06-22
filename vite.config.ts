@@ -6,7 +6,6 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: false,
-    minify: 'terser'
+    minify: 'esbuild'  // Change this from 'terser' to 'esbuild'
   }
-  
 })
