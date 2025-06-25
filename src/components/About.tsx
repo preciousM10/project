@@ -73,7 +73,7 @@ const About: React.FC = () => {
               <motion.img
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.6 }}
-                src="https://images.pexels.com/photos/8468/cross-sunset-sunrise-hill.jpg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbU5NSDGCI1j-9Ff13UEH3NtRNRExL_8s1PA&s"
                 alt="Rev. Iniobong Udoh"
                 className="w-full h-[600px] object-cover"
               />

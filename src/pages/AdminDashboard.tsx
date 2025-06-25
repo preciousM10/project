@@ -85,12 +85,7 @@ const AdminDashboard: React.FC = () => {
     status: 'published' as 'published' | 'draft'
   });
 
-  const stats = [
-    { label: 'Total Sermons', value: '156', icon: Play, color: 'from-blue-500 to-blue-600', change: '+12%' },
-    { label: 'Total Views', value: '45.2K', icon: Eye, color: 'from-green-500 to-green-600', change: '+18%' },
-    { label: 'Subscribers', value: '2.8K', icon: Users, color: 'from-purple-500 to-purple-600', change: '+25%' },
-    { label: 'Prayer Requests', value: '89', icon: Heart, color: 'from-red-500 to-red-600', change: '+8%' }
-  ];
+  
 
   const categories = ['All', 'Faith', 'Purpose', 'Healing', 'Prayer', 'Prosperity', 'Evangelism'];
   const platforms = ['YouTube', 'SoundCloud', 'Vimeo', 'Facebook', 'Instagram'];
@@ -231,32 +226,7 @@ const AdminDashboard: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="space-y-8"
           >
-            {/* Stats Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {stats.map((stat, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-white p-6 rounded-xl shadow-lg"
-                >
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <p className="text-sm font-medium text-gray-600">{stat.label}</p>
-                      <p className="text-3xl font-bold text-gray-900">{stat.value}</p>
-                      <div className="flex items-center mt-2">
-                        <TrendingUp className="w-4 h-4 text-green-500 mr-1" />
-                        <span className="text-sm text-green-600">{stat.change}</span>
-                      </div>
-                    </div>
-                    <div className={`w-12 h-12 rounded-full bg-gradient-to-r ${stat.color} flex items-center justify-center`}>
-                      <stat.icon className="w-6 h-6 text-white" />
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
+       
 
             {/* Recent Activity */}
             <div className="bg-white rounded-xl shadow-lg p-6">
