@@ -1,7 +1,7 @@
 
 import React, { useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Filter, Search, Play, Video } from 'lucide-react';
+import { Filter, Search, Video } from 'lucide-react';
 import SermonCard from '../components/SermonCard';
 import SermonModal from '../components/SermonModal';
 import { sermonsData, categories, Sermon } from '../data/sermonsData';

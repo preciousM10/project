@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { ArrowLeft, Filter, Search, Sparkles, MessageSquare } from 'lucide-react';
+import { Filter, Search, Sparkles, MessageSquare } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SermonCard from '../components/SermonCard';
 import SermonModal from '../components/SermonModal';

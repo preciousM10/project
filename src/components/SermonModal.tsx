@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Play, Calendar, Clock, Eye, Volume2, Video } from 'lucide-react';
+import { X, Calendar, Clock, Eye, Volume2, Video } from 'lucide-react';
 
 interface Sermon {
   id: number;

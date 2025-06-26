@@ -1,11 +1,10 @@
-
 import React, { useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Sparkles, MessageSquare, Clock, Filter } from 'lucide-react';
 import PropheticDeclarationCard from '../components/PropheticDeclarationCard';
 import PropheticDeclarationModal from '../components/PropheticDeclarationModal';
 import { propheticDeclarations, PropheticDeclaration } from '../data/sermonsData';
-import { useMidnightReset } from '../hooks/useMidnightReset';
+import { useMidnightReset } from '../hooks/useMidnightReset'
 
 const PropheticDeclarationsPage: React.FC = () => {
   const ref = useRef(null);
@@ -20,7 +19,7 @@ const PropheticDeclarationsPage: React.FC = () => {
 
   const { data: sortedDeclarations } = useMidnightReset(propheticDeclarations, sortByTime);
 
-  const filteredDeclarations = sortedDeclarations.filter(declaration => 
+  const filteredDeclarations = sortedDeclarations.filter((declaration: PropheticDeclaration) => 
     selectedCategory === 'All' || declaration.category === selectedCategory
   );
 
@@ -90,13 +89,13 @@ const PropheticDeclarationsPage: React.FC = () => {
             </div>
             <div>
               <div className="text-2xl sm:text-3xl font-bold text-amber-600 mb-1 sm:mb-2">
-                {filteredDeclarations.reduce((acc, declaration) => acc + declaration.views, 0).toLocaleString()}
+                {filteredDeclarations.reduce((acc: number, declaration: PropheticDeclaration) => acc + declaration.views, 0).toLocaleString()}
               </div>
               <div className="text-sm sm:text-base text-gray-600">Total Views</div>
             </div>
             <div>
               <div className="text-2xl sm:text-3xl font-bold text-green-600 mb-1 sm:mb-2">
-                {new Set(filteredDeclarations.map(d => d.category)).size}
+                {new Set(filteredDeclarations.map((d: PropheticDeclaration) => d.category)).size}
               </div>
               <div className="text-sm sm:text-base text-gray-600">Categories</div>
             </div>
@@ -134,7 +133,7 @@ const PropheticDeclarationsPage: React.FC = () => {
 
         {/* Prophetic Declarations Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 px-4 sm:px-0">
-          {filteredDeclarations.map((declaration, index) => (
+          {filteredDeclarations.map((declaration: PropheticDeclaration, index: number) => (
             <PropheticDeclarationCard
               key={declaration.id}
               declaration={declaration}

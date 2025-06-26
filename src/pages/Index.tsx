@@ -1,8 +1,8 @@
 
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Video, Volume2, BookOpen, Settings, Play, Users, Calendar, Heart } from 'lucide-react';
+import { Video, Volume2, BookOpen,  Play,  Calendar, Heart } from 'lucide-react';
 
 const Index = () => {
   const features = [

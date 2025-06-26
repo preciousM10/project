@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useAuth } from '../contexts/AuthContext';
 import { 
   BarChart3, 
-  Users, 
+  
   Play, 
   MessageSquare, 
   Plus, 
@@ -13,13 +13,9 @@ import {
   Trash2, 
   Eye,
   LogOut,
-  Upload,
+  
   Link,
-  Calendar,
-  Clock,
-  TrendingUp,
-  Heart,
-  Download
+  
 } from 'lucide-react';
 import { format } from 'date-fns';
 
