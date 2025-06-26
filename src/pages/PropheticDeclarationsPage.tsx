@@ -4,7 +4,7 @@ import { Sparkles, MessageSquare, Clock, Filter } from 'lucide-react';
 import PropheticDeclarationCard from '../components/PropheticDeclarationCard';
 import PropheticDeclarationModal from '../components/PropheticDeclarationModal';
 import { propheticDeclarations, PropheticDeclaration } from '../data/sermonsData';
-import { useMidnightReset } from '@/hooks/useMidnightReset'
+import { useMidnightReset } from '@/hooks/useMidnightReset';
 
 const PropheticDeclarationsPage: React.FC = () => {
   const ref = useRef(null);
